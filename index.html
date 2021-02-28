@@ -5,11 +5,12 @@
     <title>The Weather</title>
     <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <link href="src/styles.css" />
+    
 
     <script src="https://kit.fontawesome.com/eb3ba3e481.js" crossorigin="anonymous"></script>
 
@@ -20,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="src/styles.css" />
 </head>
 
 <body>
@@ -69,7 +71,7 @@
                             <h6 class="currentDayTime" id="current-day-time">Monday, 11.11am</h6>
                             <h2 class="currentTemperature" id="current-temperature">
                                 <span class="displayTemp" id="display-temp">20</span>
-                                <a href="#" id="main-celcius">ºC </a>
+                                <a href="#" class="temp-celcius" id="main-celcius">ºC </a>
 
                             </h2>
                             <span class="sun"><i class="fas fa-sun"></i></span>
@@ -165,7 +167,7 @@
     </div>
     </div>
     </div>
-
+<span class="open-source-link" id="opn-src"><a href="https://github.com/Sitara-Persyana/weather-flower-app" class="code-link">Open-source code</a> by Kristina Mynarova</span>
 
 
     <script src="src/index.js"></script>
