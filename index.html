@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Weather</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link href="src/styles.css" />
+
+    <script src="https://kit.fontawesome.com/eb3ba3e481.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="mx-auto" style="width: 30rem;">
+                <div class="card-body">
+
+
+                    <form id="search-engine-form">
+                        <div class="row justify-content-center">
+                            <div class="col d-flex">
+                                <div class="mx-auto">
+
+                                    <input type="text" placeholder="Search a city..." style="width: 25rem;"
+                                        id="search-a-city" />
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-2">
+                                <input type="submit" class="btn btn-outline-dark btn-sm btn-space" value="Search">
+                            </div>
+                            <div class="p-2">
+                                <button type="button" class="btn btn-outline-dark btn-sm btn-space"
+                                    id="current-location-button" value="Current-Location"> Current Location </button>
+                            </div>
+                            <div class="p-2">
+                                <button type="button" class="btn btn-outline-dark btn-sm btn-space">Update</button>
+
+                            </div>
+                        </div>
+                </div>
+
+                </form>
+
+                <div class="mainInfo" id="center-box">
+                    <div class="card">
+                        <div class="card text-center">
+                            <h1 class="cityResult" id="city-result">
+                                Naples
+                            </h1>
+                            <h6 class="currentDayTime" id="current-day-time">Monday, 11.11am</h6>
+                            <h2 class="currentTemperature" id="current-temperature">
+                                <span class="displayTemp" id="display-temp">20</span>
+                                <a href="#" id="main-celcius">ºC </a>
+
+                            </h2>
+                            <span class="sun"><i class="fas fa-sun"></i></span>
+                            <h6 class="status" id="status-main">sunny</h6>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="forecast">
+                    <div class="container-fluid">
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="col-sm d-flex "">
+            <div class=" card" style="width: 7rem;">
+                                <div class="card card-body flex-fill">
+                                    <h5 class="card-title">Tuesday</h5>
+                                    <i class="fas fa-sun"></i>
+                                    <p>15ºC/25ºC</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm d-flex">
+                            <div class="card" style="width: 7rem;">
+                                <div class="card card-body flex-fill">
+                                    <h5 class="card-title">Wednesday</h5>
+                                    <i class="fas fa-sun"></i>
+                                    <p>19ºC/27ºC</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm d-flex">
+                            <div class="card" style="width: 7rem;">
+                                <div class="card card-body flex-fill">
+                                    <h5 class="card-title">Thursday</h5>
+                                    <i class="fas fa-sun"></i>
+                                    <p>18ºC/27ºC</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm d-flex">
+                            <div class="card" style="width: 7rem;">
+                                <div class="card card-body flex-fill">
+                                    <h5 class="card-title">Friday</h5>
+                                    <i class="fas fa-cloud-sun-rain"></i>
+                                    <p>10ºC/18ºC</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm d-flex">
+                            <div class="card" style="width: 7rem;">
+                                <div class="card card-body flex-fill">
+                                    <h5 class="card-title">Saturday</h5>
+                                    <i class="fas fa-cloud-sun"></i>
+                                    <p>13ºC/22ºC</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="extra">
+                <div class="row justify-content-center">
+                    <div class="col-sm">
+                        <div class="mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <li><i class="fas fa-thermometer-three-quarters"></i> Feels like: <span
+                                        class="more-Info" id="feels-like"> 21</span>ºC
+                                </li>
+                                <li><i class="fas fa-wind"></i> Wind: ssw <span class="more-Info" id="wind"> 5
+                                    </span>m/s
+                                </li>
+
+                                <li><i class="fas fa-tint"></i> Humidity: <span class="more-Info" id="humidity"> 42
+                                    </span>%
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>

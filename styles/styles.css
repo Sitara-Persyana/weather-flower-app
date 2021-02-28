@@ -1,0 +1,170 @@
+body {
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: 20px auto;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  border-color: #ffaaa5;
+  border-width: 5px;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 10px;
+
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  vertical-align: top;
+  color: #1687a7;
+  font-size: 15px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1687a7;
+}
+h1 {
+  text-align: center;
+  display: block;
+  margin: 15px auto 10px auto;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h1.cityResult {
+  font-family: "Montserrat", sans-serif;
+  color: #276678;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 10px auto 10px auto;
+  font-weight: bold;
+  color: #ffaaa5;
+}
+
+h2.currentTemperature {
+  color: #1687a7;
+}
+
+span {
+  font-size: 2em;
+  color: #ffd3b6;
+  margin: 0 auto;
+}
+
+span.displayTemp {
+  color: #1687a7;
+  font-size: 25px;
+}
+
+span.more-Info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 0px 10px;
+}
+
+h6.status {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #1687a7;
+}
+
+h6.currentDayTime {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.8;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.6;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+span.sun {
+  font-size: 1.5em;
+}
+i.fa-sun {
+  font-size: 1.5em;
+  color: #ffd3b6;
+  margin: 10px auto;
+}
+
+.fa-cloud-sun-rain {
+  color: #ffd3b6;
+  font-size: 1.5em;
+  margin: 10px auto;
+}
+
+.fa-cloud-sun {
+  color: #ffd3b6;
+  font-size: 1.5em;
+  margin: 10px auto;
+}
+
+div.card {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+
+.mainInfo {
+  background-color: #a8e6cf;
+}
+
+.forecast {
+  text-align: center;
+  padding: 15px;
+}
+
+div.flex-fill {
+  padding: 10px;
+}
+
+div.extra {
+  padding: 10px auto 10px auto;
+  margin: 0 auto;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+}
+
+div.buttons {
+  display: inline;
+}
