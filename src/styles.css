@@ -135,25 +135,11 @@ li {
   font-size: 12px;
 }
 
-span.sun {
-  font-size: 1.5em;
-}
-i.fa-sun {
-  font-size: 1.5em;
-  color: #ffd3b6;
-  margin: 10px auto;
-}
-
-.fa-cloud-sun-rain {
-  color: #ffd3b6;
-  font-size: 1.5em;
-  margin: 10px auto;
-}
-
-.fa-cloud-sun {
-  color: #ffd3b6;
-  font-size: 1.5em;
-  margin: 10px auto;
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
 }
 
 div.card {

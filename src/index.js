@@ -47,6 +47,8 @@ function searchCity(event) {
 let searchForm = document.querySelector("#search-engine-form");
 searchForm.addEventListener("submit", searchCity);
 
+
+
 function showWeather(response) {
   console.log(response);
   console.log(response.data.main.temp);
@@ -96,3 +98,5 @@ let currentLocationBtn = document.querySelector("#current-location-button");
 currentLocationBtn.addEventListener("click", searchMyCity);
 
 document.querySelector("#update").addEventListener("click", searchMyCity);
+
+searchCity("Prague");
