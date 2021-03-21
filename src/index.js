@@ -67,7 +67,14 @@ function showWeather(response) {
 
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
+
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+ 
 }
+
+
 
 function showLocation(position) {
   let lat = position.coords.latitude;
@@ -87,3 +94,5 @@ function searchMyCity(event) {
 
 let currentLocationBtn = document.querySelector("#current-location-button");
 currentLocationBtn.addEventListener("click", searchMyCity);
+
+document.querySelector("#update").addEventListener("click", searchMyCity);
